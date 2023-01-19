@@ -48,13 +48,13 @@ test('Question 6: wordLengths', () => {
   expect(exercises.wordLengths()).toEqual([]);
 });
 
-// Question 7
 test('Question 7: searchWord', () => {
   let text = 'D Smoke is humble. The Inglewood native exudes an aura of maturation, needed for his quick ascension into popular culture as the first winner of Rhythm + Flow, Netflix’s hip-hop reality competition centered on the discovery of hip-hop’s next star. His signature authenticity shone throughout the 10-episode series and international audiences were drawn to his charisma as he proudly rapped about his lived experiences as a young black man in Inglewood.';
   expect(exercises.searchWord('his', text)).toBe(4);
   expect(exercises.searchWord('flow', text)).toBe(1);
-});
-
+  expect(exercises.searchWord('hip-hop', text)).toBe(2);
+  expect(exercises.searchWord('authenticity', text)).toBe(1);
+  });
 // Question 8
 // test('Question 8: searchWord', () => {
 //   let text = 'D Smoke is humble. The Inglewood native exudes an aura of maturation, needed for his quick ascension into popular culture as the first winner of Rhythm + Flow, Netflix’s hip-hop reality competition centered on the discovery of hip-hop’s next star. His signature authenticity shone throughout the 10-episode series and international audiences were drawn to his charisma as he proudly rapped about his lived experiences as a young black man in Inglewood.';
